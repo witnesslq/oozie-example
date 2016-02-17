@@ -4,7 +4,7 @@ oozie使用示例
 其目录下面包含文件job.property,workflow.xml,lib，并将打好的jar包放在lib目录下;
 
 workflow.xml:
-
+```xml
 <workflow-app xmlns='uri:oozie:workflow:0.1' name='java-wf'>
 <start to="java1"/>
 
@@ -29,7 +29,7 @@ workflow.xml:
 </kill>
 <end name="success"/>
 </workflow-app> 
-
+```
 job.property:
 
 nameNode=hdfs://kafka04:8020
